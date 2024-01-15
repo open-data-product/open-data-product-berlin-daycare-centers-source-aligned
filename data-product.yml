@@ -1,4 +1,3 @@
----
 id: berlin-lor-daycare-centers-source-aligned
 name: Berlin LOR Day Care Centers (source-aligned)
 metadata:
@@ -7,7 +6,8 @@ metadata:
   schema:
     - daycare_centers: number of daycare centers
     - places: number of places in daycare centers
-description: This data products provides Berlin daycare center data on different LOR hierarchy levels
+description: This data products provides Berlin daycare center data on different LOR
+  hierarchy levels
 input_ports:
   - id: berlin-lor-daycare-centers
     metadata:
@@ -29,8 +29,8 @@ output_ports:
     files:
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-01/berlin-lor-daycare-centers-2024-01-details.csv
 metrics:
-  - quality:
-  - operational:
+  - quality: null
+  - operational: null
 classification: source-aligned
 tags:
   - berlin

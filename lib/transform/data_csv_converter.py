@@ -39,14 +39,10 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
         # day = os.path.basename(source_file_name).split(sep="-")[6]
 
         try:
-            if source_file_path.endswith("-2023-10-details.xlsx") or source_file_path.endswith("-2023-11-details.xlsx"):
-                sheet = "Sheet1"
-            else:
-                sheet = "Kitaliste"
-
+            sheet = "Kitaliste"
             skiprows = 5
             names = ["district_id", "district_name", "id", "name", "street", "zip_code", "phone_number", "places",
-                     "type", "sponsor_id", "sponsor_name", "sponsor_type"]
+                     "type", "sponsor_id", "sponsor_name"]
             drop_columns = ["district_id", "district_name"]
 
             # Iterate over sheets

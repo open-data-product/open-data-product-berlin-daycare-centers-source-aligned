@@ -1,15 +1,15 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers/issues)
+[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers">
+  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned">
     <img src="logo_with_text.png" alt="Logo" height="80">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Berlin LOR daycare centers</h1>
+  <h1 align="center">Open Lifeworlds Data Product - Berlin LOR Daycare Centers (source-aligned)</h1>
 
   <p align="center">
-    Data product providing Berlin LOR daycare centers data</a>
+    Source-aligned data product providing Berlin LOR daycare centers data</a>
   </p>
 </p>
 
@@ -47,7 +47,7 @@ Examples:
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers/issues) for a list of proposed features (and
+See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/issues) for a list of proposed features (and
  known issues).
 
 ## License

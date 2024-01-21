@@ -71,23 +71,19 @@ Completeness of this data product is verified via [data_metrics.py](../lib/metri
 
 **Who is the consumer of the Data Product?**
 
-Consumers of this data product may include
-
-* projects that display statistical data based on LOR areas on maps or graphs
-
 ## Use Case
 
 **We believe that ...**
 **We help achieving ...**
 **We know, we are getting there based on ..., ..., ...**
 
-We believe that this data product can be used to display statistical data related to LOR areas in Berlin on an interactive map.
+We believe that this data product can be used to derive any kind of data based product.
 
 ## Classification
 
 **The nature of the exposed data (source-aligned, aggregate, consumer-aligned)**
 
-This data product is consumer-aligned since it is meant to be used for display on maps or graphs.
+This data product is source-aligned since the contained csv files represent the source data.
 
 ## Ubiquitous Language
 

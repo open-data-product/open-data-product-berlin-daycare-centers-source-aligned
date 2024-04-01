@@ -161,6 +161,7 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
                     print(f"✗️ Empty {os.path.basename(file_path_csv)}")
         except Exception as e:
             print(f"✗️ Exception: {str(e)}")
+            raise e
     elif not quiet:
         print(f"✓ Already exists {os.path.basename(file_path_csv)}")
 

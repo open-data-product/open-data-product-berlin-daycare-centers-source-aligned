@@ -39,7 +39,10 @@ def convert_file_to_csv(source_file_path, clean=False, quiet=False):
         # day = os.path.basename(source_file_name).split(sep="-")[6]
 
         try:
-            sheet = "Kitaliste"
+            excel_file = pd.ExcelFile(source_file_path)
+            sheet_names = excel_file.sheet_names
+            sheet = sheet_names[0]
+
             skiprows = 5
             names = ["district_id", "district_name", "id", "name", "street", "zip_code", "phone_number", "places",
                      "type", "sponsor_id", "sponsor_name"]

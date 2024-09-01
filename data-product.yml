@@ -25,7 +25,7 @@ output_ports:
       author: Open Lifeworlds
       url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/tree/main/data
       license: CC-BY-4.0
-      updated: '2024-08-01'
+      updated: '2024-09-01'
     files:
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-01/berlin-lor-daycare-centers-2024-01-details.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-02/berlin-lor-daycare-centers-2024-02-details.csv
@@ -34,6 +34,7 @@ output_ports:
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-06/berlin-lor-daycare-centers-2024-06-details.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-07/berlin-lor-daycare-centers-2024-07-details.csv
       - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-08/berlin-lor-daycare-centers-2024-08-details.csv
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-09/berlin-lor-daycare-centers-2024-09-details.csv
 metrics:
   - quality: null
   - operational: null

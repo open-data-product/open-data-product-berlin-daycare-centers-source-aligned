@@ -1,15 +1,14 @@
-id: berlin-lor-daycare-centers-source-aligned
-name: Berlin LOR Day Care Centers (source-aligned)
+id: berlin-daycare-centers-source-aligned
+name: Berlin Day Care Centers (source-aligned)
 metadata:
-  ownership: Open Lifeworlds
+  ownership: Open Data Product
   domain: geodata
   schema:
     - daycare_centers: number of daycare centers
     - places: number of places in daycare centers
-description: This data products provides Berlin daycare center data on different LOR
-  hierarchy levels
+description: This data products provides Berlin daycare center data
 input_ports:
-  - id: berlin-lor-daycare-centers
+  - id: berlin-daycare-centers
     metadata:
       name: Kitas in Berlin
       author: Senatsverwaltung für Bildung, Jugend und Familie
@@ -19,28 +18,27 @@ input_ports:
     files:
       - https://www.berlin.de/sen/jugend/traegerservice/kitaliste_aktuell.xlsx
 output_ports:
-  - id: berlin-lor-daycare-centers-csv
+  - id: berlin-daycare-centers-csv
     metadata:
-      name: Berlin LOR daycare centers csv
-      author: Open Lifeworlds
-      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/tree/main/data
+      name: Berlin daycare centers csv
+      author: Open Data Product
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data
       license: CC-BY-4.0
       updated: '2024-10-01'
     files:
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-01/berlin-lor-daycare-centers-2024-01-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-02/berlin-lor-daycare-centers-2024-02-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-04/berlin-lor-daycare-centers-2024-04-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-05/berlin-lor-daycare-centers-2024-05-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-06/berlin-lor-daycare-centers-2024-06-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-07/berlin-lor-daycare-centers-2024-07-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-08/berlin-lor-daycare-centers-2024-08-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-09/berlin-lor-daycare-centers-2024-09-details.csv
-      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-berlin-lor-daycare-centers-source-aligned/main/data/berlin-lor-daycare-centers-2024-10/berlin-lor-daycare-centers-2024-10-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-01/berlin-daycare-centers-2024-01-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-02/berlin-daycare-centers-2024-02-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-04/berlin-daycare-centers-2024-04-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-05/berlin-daycare-centers-2024-05-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-06/berlin-daycare-centers-2024-06-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-07/berlin-daycare-centers-2024-07-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-08/berlin-daycare-centers-2024-08-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-09/berlin-daycare-centers-2024-09-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/berlin-daycare-centers-2024-10/berlin-daycare-centers-2024-10-details.csv
 metrics:
   - quality: null
   - operational: null
 classification: source-aligned
 tags:
   - berlin
-  - lor
   - daycare

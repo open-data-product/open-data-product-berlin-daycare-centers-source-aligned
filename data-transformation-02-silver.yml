@@ -1,0 +1,26 @@
+---
+input_ports:
+  - id: berlin-daycare-centers
+    files:
+      - source_file_name: kitaliste_aktuell.xlsx
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.xlsx
+        datasets:
+          - target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv
+            sheet_name: "Kitaliste Veröffentlichung"
+            names:
+              - name: district_id
+              - name: district_name
+              - name: id
+              - name: name
+              - name: street
+              - { name: house_number, lstrip: "0" }
+              - name: zip_code
+              - { name: phone_number, format: "phone_number" }
+              - name: type
+              - name: sponsor_id
+              - name: sponsor_name
+              - name: etrs_y
+              - name: etrs_x
+              - name: places
+            skip_rows: 9
+            dropna: True

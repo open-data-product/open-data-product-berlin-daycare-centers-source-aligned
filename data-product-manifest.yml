@@ -1,0 +1,58 @@
+---
+id: berlin-daycare-centers-source-aligned
+metadata:
+  name: Berlin Day Care Centers (source-aligned)
+  owner: Open Data Product
+  description: Source-aligned data products providing Berlin daycare center data
+  url:
+  license:
+  updated: 2025-06-21
+  schema:
+    - name: daycare_centers
+      description: number of daycare centers
+    - name: places
+      description: number of places in daycare centers
+input_ports:
+  - id: berlin-daycare-centers
+    metadata:
+      name: Kitas in Berlin
+      owner: Senatsverwaltung für Bildung, Jugend und Familie
+      description:
+      url: https://www.berlin.de/sen/bildung/service/daten/
+      license: CC-BY-3.0-Namensnennung
+      updated: 2022-08-31
+      schema: []
+    files:
+      - https://www.berlin.de/sen/jugend/traegerservice/kitaliste_aktuell.xlsx
+transformation_steps: []
+output_ports:
+  - id: berlin-daycare-centers
+    metadata:
+      name: Berlin Daycare Centers
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/02-silver/berlin-daycare-centers
+      license:
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/02-silver/berlin-daycare-centers/berlin-daycare-centers-2025-06.csv
+  - id: berlin-daycare-centers
+    metadata:
+      name: Berlin Daycare Centers
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers
+      license:
+      updated: 2025-06-21
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers/berlin-daycare-centers-2025-06.csv
+observability:
+consumers: []
+use_cases: []
+classification: source-aligned
+ubiquitous_language: []
+tags:
+  - berlin
+  - daycare

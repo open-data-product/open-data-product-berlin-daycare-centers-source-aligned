@@ -21,8 +21,8 @@ from opendataproduct.document.data_product_manifest_updater import (
 )
 from opendataproduct.document.odps_canvas_generator import generate_odps_canvas
 from opendataproduct.extract.data_extractor import extract_data
-from opendataproduct.transform.data_aggregator import aggregate_data
 from opendataproduct.transform.data_copier import copy_data
+from opendataproduct.transform.data_csv_aggregator import aggregate_csv_data
 from opendataproduct.transform.data_csv_converter import convert_data_to_csv
 
 file_path = os.path.realpath(__file__)
@@ -30,8 +30,8 @@ script_path = os.path.dirname(file_path)
 
 
 @click.command()
-@click.option("--clean", default=False, help="Regenerate results.")
-@click.option("--quiet", default=False, help="Do not log outputs.")
+@click.option("--clean", "-c", default=False, is_flag=True, help="Regenerate results.")
+@click.option("--quiet", "-q", default=False, is_flag=True, help="Do not log outputs.")
 def main(clean, quiet):
     data_path = os.path.join(script_path, "data")
     bronze_path = os.path.join(data_path, "01-bronze")
@@ -91,7 +91,7 @@ def main(clean, quiet):
     # Gold: Aggregate
     #
 
-    aggregate_data(
+    aggregate_csv_data(
         data_transformation=data_transformation_gold,
         source_path=silver_path,
         results_path=gold_path,

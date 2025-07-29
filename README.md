@@ -1,3 +1,4 @@
+[![Crawl content](https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/actions/workflows/crawl-content.yaml/badge.svg)](https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/actions/workflows/crawl-content.yaml)
 [![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-berlin-daycare-centers-source-aligned)](https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/issues)
 
 <br />

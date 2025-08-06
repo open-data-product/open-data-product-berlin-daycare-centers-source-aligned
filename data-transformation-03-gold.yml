@@ -1,6 +1,6 @@
 ---
 input_ports:
-  - id: berlin-daycare-centers
+  - id: berlin-daycare-centers-{{ current_year }}-{{ current_month }}
     files:
       - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv
         target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv

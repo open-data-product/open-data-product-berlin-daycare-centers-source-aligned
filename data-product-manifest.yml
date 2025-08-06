@@ -6,14 +6,14 @@ metadata:
   description: Source-aligned data products providing Berlin daycare center data
   url:
   license:
-  updated: 2025-09-01
+  updated: 2025-09-06
   schema:
     - name: daycare_centers
       description: number of daycare centers
     - name: places
       description: number of places in daycare centers
 input_ports:
-  - id: berlin-daycare-centers
+  - id: berlin-daycare-centers-2025-09
     metadata:
       name: Kitas in Berlin
       owner: Senatsverwaltung für Bildung, Jugend und Familie
@@ -26,34 +26,17 @@ input_ports:
       - https://www.berlin.de/sen/jugend/traegerservice/kitaliste_aktuell.xlsx
 transformation_steps: []
 output_ports:
-  - id: berlin-daycare-centers
+  - id: berlin-daycare-centers-2025-09
     metadata:
-      name: Berlin Daycare Centers
+      name: Berlin Daycare Centers 2025 09
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/02-silver/berlin-daycare-centers
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-09
       license:
-      updated: 2025-09-01
+      updated: 2025-09-06
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/02-silver/berlin-daycare-centers/berlin-daycare-centers-2025-06.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/02-silver/berlin-daycare-centers/berlin-daycare-centers-2025-07.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/02-silver/berlin-daycare-centers/berlin-daycare-centers-2025-08.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/02-silver/berlin-daycare-centers/berlin-daycare-centers-2025-09.csv
-  - id: berlin-daycare-centers
-    metadata:
-      name: Berlin Daycare Centers
-      owner: Open Data Product
-      description:
-      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers
-      license:
-      updated: 2025-09-01
-      schema:
-    files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers/berlin-daycare-centers-2025-06.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers/berlin-daycare-centers-2025-07.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers/berlin-daycare-centers-2025-08.csv
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers/berlin-daycare-centers-2025-09.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-09/berlin-daycare-centers-2025-09.csv
 observability:
 consumers: []
 use_cases: []

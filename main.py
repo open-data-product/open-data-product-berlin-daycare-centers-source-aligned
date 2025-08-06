@@ -39,7 +39,13 @@ def main(clean, quiet):
     gold_path = os.path.join(data_path, "03-gold")
     docs_path = os.path.join(script_path, "docs")
 
-    data_product_manifest = load_data_product_manifest(config_path=script_path)
+    data_product_manifest = load_data_product_manifest(
+        config_path=script_path,
+        context={
+            "current_year": datetime.now().strftime("%Y"),
+            "current_month": datetime.now().strftime("%m"),
+        },
+    )
     data_transformation_silver = load_data_transformation_silver(
         config_path=script_path,
         context={
@@ -106,7 +112,7 @@ def main(clean, quiet):
     update_data_product_manifest(
         data_product_manifest=data_product_manifest,
         config_path=script_path,
-        data_paths=[silver_path, gold_path],
+        data_paths=[gold_path],
         file_endings=(".csv"),
     )
 

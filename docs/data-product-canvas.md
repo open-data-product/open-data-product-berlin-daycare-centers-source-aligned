@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data products providing Berlin daycare center data
-* updated: 2025-09-06
+* updated: 2025-10-18
 
 ## Input Ports
 
@@ -26,11 +26,21 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-09
-* updated: 2025-09-06
+* updated: 2025-10-18
 
 **Files**
 
 * [berlin-daycare-centers-2025-09.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-09/berlin-daycare-centers-2025-09.csv)
+
+### Berlin Daycare Centers 2025 10
+
+* owner: Open Data Product
+* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10
+* updated: 2025-10-18
+
+**Files**
+
+* [berlin-daycare-centers-2025-10.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10/berlin-daycare-centers-2025-10.csv)
 
 ## Classification
 

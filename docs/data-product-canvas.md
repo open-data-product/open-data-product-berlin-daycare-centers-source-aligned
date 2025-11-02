@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data products providing Berlin daycare center data
-* updated: 2025-10-31
+* updated: 2025-11-02
 
 ## Input Ports
 
@@ -121,7 +121,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
-* updated: 2025-10-31
+* updated: 2025-11-02
 
 **Files**
 
@@ -136,7 +136,7 @@
 
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
-* updated: 2025-10-31
+* updated: 2025-11-02
 
 **Files**
 
@@ -146,6 +146,36 @@
 * [berlin-daycare-centers-2025-10-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-districts.parquet)
 * [berlin-daycare-centers-2025-10-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-forecast-areas.parquet)
 * [berlin-daycare-centers-2025-10-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-planning-areas.parquet)
+
+### Berlin Daycare Centers 2025 11 Csv
+
+* owner: Open Data Product
+* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-csv
+* updated: 2025-11-02
+
+**Files**
+
+* [berlin-daycare-centers-2025-11-city.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-city.csv)
+* [berlin-daycare-centers-2025-11-details.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-details.csv)
+* [berlin-daycare-centers-2025-11-district-regions.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-district-regions.csv)
+* [berlin-daycare-centers-2025-11-districts.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-districts.csv)
+* [berlin-daycare-centers-2025-11-forecast-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-forecast-areas.csv)
+* [berlin-daycare-centers-2025-11-planning-areas.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-planning-areas.csv)
+
+### Berlin Daycare Centers 2025 11 Parquet
+
+* owner: Open Data Product
+* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-parquet
+* updated: 2025-11-02
+
+**Files**
+
+* [berlin-daycare-centers-2025-11-city.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-city.parquet)
+* [berlin-daycare-centers-2025-11-details.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-details.parquet)
+* [berlin-daycare-centers-2025-11-district-regions.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-district-regions.parquet)
+* [berlin-daycare-centers-2025-11-districts.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-districts.parquet)
+* [berlin-daycare-centers-2025-11-forecast-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-forecast-areas.parquet)
+* [berlin-daycare-centers-2025-11-planning-areas.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-planning-areas.parquet)
 
 ## Classification
 

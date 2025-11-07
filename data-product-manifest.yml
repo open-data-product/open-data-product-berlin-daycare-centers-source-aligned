@@ -6,7 +6,7 @@ metadata:
   description: Source-aligned data products providing Berlin daycare center data
   url:
   license:
-  updated: 2025-10-19
+  updated: 2025-10-27
   schema:
     - name: daycare_centers
       description: number of daycare centers
@@ -26,28 +26,28 @@ input_ports:
       - https://www.berlin.de/sen/jugend/traegerservice/kitaliste_aktuell.xlsx
 transformation_steps: []
 output_ports:
-  - id: berlin-daycare-centers-2025-09
+  - id: berlin-daycare-centers-2025-10-csv
     metadata:
-      name: Berlin Daycare Centers 2025 09
+      name: Berlin Daycare Centers 2025 10 Csv
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-09
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
       license:
-      updated: 2025-10-19
+      updated: 2025-10-27
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-09/berlin-daycare-centers-2025-09.csv
-  - id: berlin-daycare-centers-2025-10
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10.csv
+  - id: berlin-daycare-centers-2025-10-parquet
     metadata:
-      name: Berlin Daycare Centers 2025 10
+      name: Berlin Daycare Centers 2025 10 Parquet
       owner: Open Data Product
       description:
-      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
       license:
-      updated: 2025-10-19
+      updated: 2025-10-27
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10/berlin-daycare-centers-2025-10.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10.parquet
 observability:
 consumers: []
 use_cases: []

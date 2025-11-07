@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data products providing Berlin daycare center data
-* updated: 2025-10-19
+* updated: 2025-10-27
 
 ## Input Ports
 
@@ -22,25 +22,25 @@
 
 ## Output Ports
 
-### Berlin Daycare Centers 2025 09
+### Berlin Daycare Centers 2025 10 Csv
 
 * owner: Open Data Product
-* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-09
-* updated: 2025-10-19
+* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
+* updated: 2025-10-27
 
 **Files**
 
-* [berlin-daycare-centers-2025-09.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-09/berlin-daycare-centers-2025-09.csv)
+* [berlin-daycare-centers-2025-10.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10.csv)
 
-### Berlin Daycare Centers 2025 10
+### Berlin Daycare Centers 2025 10 Parquet
 
 * owner: Open Data Product
-* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10
-* updated: 2025-10-19
+* url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
+* updated: 2025-10-27
 
 **Files**
 
-* [berlin-daycare-centers-2025-10.csv](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10/berlin-daycare-centers-2025-10.csv)
+* [berlin-daycare-centers-2025-10.parquet](https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10.parquet)
 
 ## Classification
 

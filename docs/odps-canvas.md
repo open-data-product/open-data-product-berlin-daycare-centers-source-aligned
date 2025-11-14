@@ -1,19 +1,18 @@
 
-# Open Data Product Specification (ODPS) Canvas - Berlin Daycare Centers source-aligned
+# Open Data Product Specification (ODPS) Canvas - Berlin Day Care Centers (source-aligned)
 
 * schema version: 3.1
 ## Product
 
 ### Basic Information
 
-* output file formats: csv
 * categories: timeseries
-* description: Data product providing Berlin daycare center data
-* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-center-source-aligned/refs/heads/main/logo-with-text.png
+* description: Source-aligned data products providing Berlin daycare center data
+* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
 * product ID: berlin-daycare-centers-source-aligned
 * product series: Berlin Timeseries Series
 * status: active
-* tags: Berlin, daycare
+* tags: berlin, daycare
 * type: source-aligned
 * value proposition: Providing Berlin daycare center data
 * version: 1.0

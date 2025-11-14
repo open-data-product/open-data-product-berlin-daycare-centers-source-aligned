@@ -1,0 +1,64 @@
+---
+dataProductDescriptor: data-product-descriptor
+info:
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:berlin-daycare-centers-source-aligned:1.0
+  name: Berlin Day Care Centers (source-aligned)
+  version: '1.0'
+  domain: domain
+  owner:
+    id: Open Data product
+    name: Open Data product
+  id: berlin-daycare-centers-source-aligned
+  entityType:
+  displayName: Berlin Day Care Centers (source-aligned)
+  description: Source-aligned data products providing Berlin daycare center data
+  contactPoints:
+interfaceComponents:
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-daycare-centers-2025-10-csv
+      fullyQualifiedName: berlin-daycare-centers-2025-10-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-daycare-centers-2025-10-parquet
+      fullyQualifiedName: berlin-daycare-centers-2025-10-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-daycare-centers-2025-10
+      fullyQualifiedName: berlin-daycare-centers-2025-10
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:

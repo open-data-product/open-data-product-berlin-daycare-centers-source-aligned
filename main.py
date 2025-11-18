@@ -57,6 +57,9 @@ def main(clean, quiet):
     gold_path = os.path.join(data_path, "03-gold")
     docs_path = os.path.join(script_path, "docs")
 
+    data_product_manifest_without_context = load_data_product_manifest(
+        config_path=script_path,
+    )
     data_product_manifest = load_data_product_manifest(
         config_path=script_path,
         context={
@@ -70,6 +73,14 @@ def main(clean, quiet):
             "current_year": datetime.now().strftime("%Y"),
             "current_month": datetime.now().strftime("%m"),
         },
+    )
+    data_transformation_gold_geo = load_data_transformation_gold(
+        config_path=script_path,
+        context={
+            "current_year": datetime.now().strftime("%Y"),
+            "current_month": datetime.now().strftime("%m"),
+        },
+        file_name="data-transformation-03-gold-geo.yml",
     )
     data_transformation_gold = load_data_transformation_gold(
         config_path=script_path,
@@ -117,8 +128,17 @@ def main(clean, quiet):
     #
 
     aggregate_data(
-        data_transformation=data_transformation_gold,
+        data_transformation=data_transformation_gold_geo,
+        geojson_path=bronze_path,
         source_path=silver_path,
+        results_path=gold_path,
+        clean=clean,
+        quiet=quiet,
+    )
+
+    aggregate_data(
+        data_transformation=data_transformation_gold,
+        source_path=gold_path,
         results_path=gold_path,
         clean=clean,
         quiet=quiet,
@@ -129,7 +149,7 @@ def main(clean, quiet):
     #
 
     create_jupyter_notebook_for_csv(
-        data_product_manifest=data_product_manifest,
+        data_product_manifest=data_product_manifest_without_context,
         results_path=script_path,
         data_path=gold_path,
         clean=True,
@@ -137,26 +157,26 @@ def main(clean, quiet):
     )
 
     update_data_product_manifest(
-        data_product_manifest=data_product_manifest,
+        data_product_manifest=data_product_manifest_without_context,
         config_path=script_path,
         data_paths=[gold_path],
         file_endings=(".csv", ".parquet"),
     )
 
     update_odps(
-        data_product_manifest=data_product_manifest,
+        data_product_manifest=data_product_manifest_without_context,
         odps=odps,
         config_path=script_path,
     )
 
     update_dpds(
-        data_product_manifest=data_product_manifest,
+        data_product_manifest=data_product_manifest_without_context,
         dpds=dpds,
         config_path=script_path,
     )
 
     generate_data_product_canvas(
-        data_product_manifest=data_product_manifest,
+        data_product_manifest=data_product_manifest_without_context,
         docs_path=docs_path,
     )
 

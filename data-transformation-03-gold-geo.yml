@@ -1,0 +1,22 @@
+---
+attribute_groups:
+  - details: &details
+      - name: id
+      - name: name
+      - name: phone_number
+      - name: places
+      - name: type
+      - name: sponsor_id
+      - name: sponsor_name
+      - { name: street, concat: [ street, house_number ], concat_delimiter: " " }
+      - name: zip_code
+      - { name: lat, transform_source: "EPSG:25833", transform_target: "EPSG:4326", transform_lat: [ etrs_x, etrs_y ] }
+      - { name: lon, transform_source: "EPSG:25833", transform_target: "EPSG:4326", transform_lon: [ etrs_x, etrs_y ] }
+      - { name: geojson_feature_id, geojson_lookup: [lat, lon] }
+input_ports:
+  - id: berlin-daycare-centers-{{ current_year }}-{{ current_month }}
+    files:
+      - geojson_template_file_name: berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson
+        source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        names: *details

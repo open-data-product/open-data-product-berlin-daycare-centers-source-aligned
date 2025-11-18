@@ -1,18 +1,84 @@
 ---
+attribute_groups:
+  - city: &city
+      - { name: name , remove: True }
+      - { name: phone_number , remove: True }
+      - name: places
+      - { name: type , remove: True }
+      - { name: sponsor_id , remove: True }
+      - { name: sponsor_name , remove: True }
+      - { name: street, remove: True }
+      - { name: zip_code , remove: True }
+      - { name: daycare_centers, value: 1 }
+      - name: places
+  - district: &district
+      - { name: id , rename: "daycare_center_id", remove: True }
+      - { name: name , remove: True }
+      - { name: phone_number , remove: True }
+      - name: places
+      - { name: type , remove: True }
+      - { name: sponsor_id , remove: True }
+      - { name: sponsor_name , remove: True }
+      - { name: street, remove: True }
+      - { name: zip_code , remove: True }
+      - { name: district_id, split: { name: "geojson_feature_id", first_n: 2 }, rename: id, zfill: 2 }
+      - { name: daycare_centers, value: 1 }
+  - forecast-area: &forecast-area
+      - { name: id , rename: "daycare_center_id", remove: True }
+      - { name: name , remove: True }
+      - { name: phone_number , remove: True }
+      - name: places
+      - { name: type , remove: True }
+      - { name: sponsor_id , remove: True }
+      - { name: sponsor_name , remove: True }
+      - { name: street, remove: True }
+      - { name: zip_code , remove: True }
+      - { name: forecast_area_id, split: { name: "geojson_feature_id", first_n: 4 }, rename: id, zfill: 4 }
+      - { name: daycare_centers, value: 1 }
+  - district-region: &district-region
+      - { name: id , rename: "daycare_center_id", remove: True }
+      - { name: name , remove: True }
+      - { name: phone_number , remove: True }
+      - name: places
+      - { name: type , remove: True }
+      - { name: sponsor_id , remove: True }
+      - { name: sponsor_name , remove: True }
+      - { name: street, remove: True }
+      - { name: zip_code , remove: True }
+      - { name: district_region_id, split: { name: "geojson_feature_id", first_n: 6 }, rename: id, zfill: 6 }
+      - { name: daycare_centers, value: 1 }
+  - planning-area: &planning-area
+      - { name: id , rename: "daycare_center_id", remove: True }
+      - { name: name , remove: True }
+      - { name: phone_number , remove: True }
+      - name: places
+      - { name: type , remove: True }
+      - { name: sponsor_id , remove: True }
+      - { name: sponsor_name , remove: True }
+      - { name: street, remove: True }
+      - { name: zip_code , remove: True }
+      - { name: planning_area_id, split: { name: "geojson_feature_id", first_n: 8 }, rename: id, zfill: 8 }
+      - { name: daycare_centers, value: 1 }
 input_ports:
-  - id: berlin-daycare-centers-{{ current_year }}-{{ current_month }}
+  - id: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-csv
     files:
-      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv
-        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}.csv
-        names:
-          - name: id
-          - name: name
-          - name: phone_number
-          - name: places
-          - name: type
-          - name: sponsor_id
-          - name: sponsor_name
-          - { name: street, concat: [ street, house_number ], concat_delimiter: " " }
-          - name: zip_code
-          - { name: lat, transform_source: "EPSG:25833", transform_target: "EPSG:4326", transform_lat: [ etrs_x, etrs_y ] }
-          - { name: lon, transform_source: "EPSG:25833", transform_target: "EPSG:4326", transform_lon: [ etrs_x, etrs_y ] }
+      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-city.csv
+        aggregate_by: "total"
+        names: *city
+      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-district.csv
+        aggregate_by: district_id
+        names: *district
+      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-forecast-area.csv
+        aggregate_by: forecast_area_id
+        names: *forecast-area
+      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-district-region.csv
+        aggregate_by: district_region_id
+        names: *district-region
+      - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-planning-area.csv
+        aggregate_by: planning_area_id
+        names: *planning-area

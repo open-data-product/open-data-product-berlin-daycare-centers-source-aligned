@@ -6,14 +6,102 @@ metadata:
   description: Source-aligned data products providing Berlin daycare center data
   url:
   license:
-  updated: 2025-10-28
+  updated: 2025-10-31
   schema:
     - name: daycare_centers
       description: number of daycare centers
     - name: places
       description: number of places in daycare centers
 input_ports:
-  - id: berlin-daycare-centers-2025-10
+  - id: berlin-lor-city
+    metadata:
+      name: Berlin Lor City
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-city
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-city/berlin-lor-city.geojson
+  - id: berlin-lor-district-regions-from-2021
+    metadata:
+      name: Berlin Lor District Regions From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-district-regions-from-2021
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-district-regions-from-2021/berlin-lor-district-regions-from-2021.geojson
+  - id: berlin-lor-district-regions-until-2020
+    metadata:
+      name: Berlin Lor District Regions Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-district-regions-until-2020
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-district-regions-until-2020/berlin-lor-district-regions-until-2020.geojson
+  - id: berlin-lor-districts
+    metadata:
+      name: Berlin Lor Districts
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-districts
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-districts/berlin-lor-districts.geojson
+  - id: berlin-lor-forecast-areas-from-2021
+    metadata:
+      name: Berlin Lor Forecast Areas From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-forecast-areas-from-2021
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-forecast-areas-from-2021/berlin-lor-forecast-areas-from-2021.geojson
+  - id: berlin-lor-forecast-areas-until-2020
+    metadata:
+      name: Berlin Lor Forecast Areas Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-forecast-areas-until-2020
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-forecast-areas-until-2020/berlin-lor-forecast-areas-until-2020.geojson
+  - id: berlin-lor-planning-areas-from-2021
+    metadata:
+      name: Berlin Lor Planning Areas From 2021
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-planning-areas-from-2021
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-planning-areas-from-2021/berlin-lor-planning-areas-from-2021.geojson
+  - id: berlin-lor-planning-areas-until-2020
+    metadata:
+      name: Berlin Lor Planning Areas Until 2020
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-lor-geodata/tree/main/data/02-silver/berlin-lor-planning-areas-until-2020
+      license: CC-BY 4.0
+      updated: 2025-10-28
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-geodata/main/data/02-silver/berlin-lor-planning-areas-until-2020/berlin-lor-planning-areas-until-2020.geojson
+  - id: berlin-daycare-centers-{{ current_year }}-{{ current_month }}
     metadata:
       name: Kitas in Berlin
       owner: Senatsverwaltung für Bildung, Jugend und Familie
@@ -24,7 +112,19 @@ input_ports:
       schema: []
     files:
       - https://www.berlin.de/sen/jugend/traegerservice/kitaliste_aktuell.xlsx
-transformation_steps: []
+transformation_steps:
+  - name: Data extractor
+    path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/extract/data_extractor.py
+    description: extracts data from inout ports
+  - name: Data copier
+    path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_copier.py
+    description: copies and renames extracted data
+  - name: Data CSV converter
+    path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_csv_converter.py
+    description: converts Excel files to CSV format
+  - name: Data aggregator
+    path: https://github.com/open-data-product/open-data-product-python-lib/blob/main/opendataproduct/transform/data_aggregator.py
+    description: aggregates data to be used as output ports
 output_ports:
   - id: berlin-daycare-centers-2025-10-csv
     metadata:
@@ -33,10 +133,15 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
       license:
-      updated: 2025-10-28
+      updated: 2025-10-31
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-city.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-district-region.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-district.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-forecast-area.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-planning-area.csv
   - id: berlin-daycare-centers-2025-10-parquet
     metadata:
       name: Berlin Daycare Centers 2025 10 Parquet
@@ -44,10 +149,15 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
       license:
-      updated: 2025-10-28
+      updated: 2025-10-31
       schema:
     files:
-      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-city.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-details.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-district-region.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-district.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-forecast-area.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-planning-area.parquet
 observability:
 consumers: []
 use_cases: []

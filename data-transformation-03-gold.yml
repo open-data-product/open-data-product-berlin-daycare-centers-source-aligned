@@ -67,18 +67,18 @@ input_ports:
         aggregate_by: "total"
         names: *city
       - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
-        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-district.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-districts.csv
         aggregate_by: district_id
         names: *district
       - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
-        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-forecast-area.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-forecast-areas.csv
         aggregate_by: forecast_area_id
         names: *forecast-area
       - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
-        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-district-region.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-district-regions.csv
         aggregate_by: district_region_id
         names: *district-region
       - source_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-details.csv
-        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-planning-area.csv
+        target_file_name: berlin-daycare-centers-{{ current_year }}-{{ current_month }}-planning-areas.csv
         aggregate_by: planning_area_id
         names: *planning-area

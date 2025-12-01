@@ -6,7 +6,7 @@
 ## Info
 
 * ID: berlin-daycare-centers-source-aligned
-* fully qualified name: urn:dpds:openlifeworlds:dataproducts:berlin-daycare-centers-source-aligned:1.0
+* fully qualified name: urn:dpds:opendataproduct:dataproducts:berlin-daycare-centers-source-aligned:1.0
 * name: Berlin Day Care Centers (source-aligned)
 * version: 1.0
 * display name: Berlin Day Care Centers (source-aligned)
@@ -14,8 +14,8 @@
 * domain: domain
 ### Owner
 
-* id: Open Lifeworlds
-* name: Open Lifeworlds
+* id: Open Data Product
+* name: Open Data Product
 
 ## Interface Components
 
@@ -34,6 +34,10 @@
 * fully qualified name: berlin-daycare-centers-2025-11-csv
 #### berlin-daycare-centers-2025-11-parquet
 * fully qualified name: berlin-daycare-centers-2025-11-parquet
+#### berlin-daycare-centers-2025-12-csv
+* fully qualified name: berlin-daycare-centers-2025-12-csv
+#### berlin-daycare-centers-2025-12-parquet
+* fully qualified name: berlin-daycare-centers-2025-12-parquet
 
 
 ---

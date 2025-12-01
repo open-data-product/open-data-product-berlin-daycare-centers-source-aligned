@@ -1,13 +1,13 @@
 ---
 dataProductDescriptor: data-product-descriptor
 info:
-  fullyQualifiedName: urn:dpds:openlifeworlds:dataproducts:berlin-daycare-centers-source-aligned:1.0
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:berlin-daycare-centers-source-aligned:1.0
   name: Berlin Day Care Centers (source-aligned)
   version: '1.0'
   domain: domain
   owner:
-    id: Open Lifeworlds
-    name: Open Lifeworlds
+    id: Open Data Product
+    name: Open Data Product
   id: berlin-daycare-centers-source-aligned
   entityType:
   displayName: Berlin Day Care Centers (source-aligned)
@@ -59,6 +59,32 @@ interfaceComponents:
       obligations:
       id: berlin-daycare-centers-2025-11-parquet
       fullyQualifiedName: berlin-daycare-centers-2025-11-parquet
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-daycare-centers-2025-12-csv
+      fullyQualifiedName: berlin-daycare-centers-2025-12-csv
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+    - promises:
+      expectations:
+      obligations:
+      id: berlin-daycare-centers-2025-12-parquet
+      fullyQualifiedName: berlin-daycare-centers-2025-12-parquet
       entityType:
       name: ''
       version:

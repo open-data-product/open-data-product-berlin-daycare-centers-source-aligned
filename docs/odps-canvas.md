@@ -6,15 +6,12 @@
 
 ### Basic Information
 
-* categories: timeseries
 * description: Source-aligned data products providing Berlin daycare center data
-* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
+* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/refs/heads/main/logo-with-text.png
 * product ID: berlin-daycare-centers-source-aligned
-* product series: Berlin Timeseries Series
 * status: active
 * tags: berlin, daycare
 * type: source-aligned
-* value proposition: Providing Berlin daycare center data
 * version: 1.0
 * visibility: public
 

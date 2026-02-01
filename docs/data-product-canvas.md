@@ -5,7 +5,7 @@
 
 * owner: Open Data Product
 * description: Source-aligned data products providing Berlin daycare center data
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 ## Input Ports
 
@@ -38,7 +38,7 @@ name: Kitas in Berlin
 name: Berlin Daycare Centers 2025 10 Csv
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -54,7 +54,7 @@ name: Berlin Daycare Centers 2025 10 Csv
 name: Berlin Daycare Centers 2025 10 Parquet
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -70,7 +70,7 @@ name: Berlin Daycare Centers 2025 10 Parquet
 name: Berlin Daycare Centers 2025 11 Csv
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-csv
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -86,7 +86,7 @@ name: Berlin Daycare Centers 2025 11 Csv
 name: Berlin Daycare Centers 2025 11 Parquet
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-parquet
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -102,7 +102,7 @@ name: Berlin Daycare Centers 2025 11 Parquet
 name: Berlin Daycare Centers 2025 12 Csv
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-12-csv
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -118,7 +118,7 @@ name: Berlin Daycare Centers 2025 12 Csv
 name: Berlin Daycare Centers 2025 12 Parquet
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-12-parquet
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -134,7 +134,7 @@ name: Berlin Daycare Centers 2025 12 Parquet
 name: Berlin Daycare Centers 2026 01 Csv
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-01-csv
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 
@@ -150,7 +150,7 @@ name: Berlin Daycare Centers 2026 01 Csv
 name: Berlin Daycare Centers 2026 01 Parquet
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-01-parquet
-* updated: 2026-01-01
+* updated: 2026-02-01
 
 **Files**
 

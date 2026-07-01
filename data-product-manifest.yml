@@ -6,7 +6,7 @@ metadata:
   description: Source-aligned data products providing Berlin daycare center data
   url:
   license:
-  updated: 2026-06-01
+  updated: 2026-07-01
   schema:
     - name: daycare_centers
       description: number of daycare centers
@@ -47,7 +47,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-csv
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-csv/berlin-daycare-centers-2025-10-city.csv
@@ -63,7 +63,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-10-parquet
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-10-parquet/berlin-daycare-centers-2025-10-city.parquet
@@ -79,7 +79,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-csv
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-csv/berlin-daycare-centers-2025-11-city.csv
@@ -95,7 +95,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-11-parquet
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-11-parquet/berlin-daycare-centers-2025-11-city.parquet
@@ -111,7 +111,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-12-csv
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-12-csv/berlin-daycare-centers-2025-12-city.csv
@@ -127,7 +127,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2025-12-parquet
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2025-12-parquet/berlin-daycare-centers-2025-12-city.parquet
@@ -143,7 +143,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-01-csv
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-01-csv/berlin-daycare-centers-2026-01-city.csv
@@ -159,7 +159,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-01-parquet
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-01-parquet/berlin-daycare-centers-2026-01-city.parquet
@@ -175,7 +175,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-06-csv
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-06-csv/berlin-daycare-centers-2026-06-city.csv
@@ -191,7 +191,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-06-parquet
       license:
-      updated: 2026-06-01
+      updated: 2026-07-01
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-06-parquet/berlin-daycare-centers-2026-06-city.parquet
@@ -200,6 +200,38 @@ output_ports:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-06-parquet/berlin-daycare-centers-2026-06-districts.parquet
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-06-parquet/berlin-daycare-centers-2026-06-forecast-areas.parquet
       - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-06-parquet/berlin-daycare-centers-2026-06-planning-areas.parquet
+  - id: berlin-daycare-centers-2026-07-csv
+    metadata:
+      name: Berlin Daycare Centers 2026 07 Csv
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-07-csv
+      license:
+      updated: 2026-07-01
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-city.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-details.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-district-regions.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-districts.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-forecast-areas.csv
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-csv/berlin-daycare-centers-2026-07-planning-areas.csv
+  - id: berlin-daycare-centers-2026-07-parquet
+    metadata:
+      name: Berlin Daycare Centers 2026 07 Parquet
+      owner: Open Data Product
+      description:
+      url: https://github.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/tree/main/data/03-gold/berlin-daycare-centers-2026-07-parquet
+      license:
+      updated: 2026-07-01
+      schema:
+    files:
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-city.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-details.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-district-regions.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-districts.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-forecast-areas.parquet
+      - https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-daycare-centers-source-aligned/main/data/03-gold/berlin-daycare-centers-2026-07-parquet/berlin-daycare-centers-2026-07-planning-areas.parquet
 observability:
 consumers: []
 use_cases: []

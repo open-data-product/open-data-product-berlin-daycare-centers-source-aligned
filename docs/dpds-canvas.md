@@ -46,6 +46,10 @@
 * fully qualified name: berlin-daycare-centers-2026-06-csv
 #### berlin-daycare-centers-2026-06-parquet
 * fully qualified name: berlin-daycare-centers-2026-06-parquet
+#### berlin-daycare-centers-2026-07-csv
+* fully qualified name: berlin-daycare-centers-2026-07-csv
+#### berlin-daycare-centers-2026-07-parquet
+* fully qualified name: berlin-daycare-centers-2026-07-parquet
 
 
 ---
